@@ -1,0 +1,837 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    box-sizing: border-box;
+    /* font-family: 'Yu Gothic Light'; */
+    text-decoration: none;
+    transition: .4s;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(teal, white);
+    cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(white,teal);
+}
+h1,h2{
+    font-weight: bold;
+}
+
+#navbar{
+    background: linear-gradient(-90deg, teal,rgba(0, 128, 128, 0.762));
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    padding: 5px 0;
+    z-index: 333;
+}
+#navbar .nav-logo img{
+    width: 50px;
+}
+#navbar .nav-items ul{
+    display: flex;
+    margin-top: -45px;
+    float: right;
+}
+.nav-items label{
+    display: none;
+}
+#navbar .nav-items ul li{
+    margin-left: 50px;
+}
+#navbar .nav-items ul li a{
+    color: #0e1111;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+#a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: rgb(5, 228, 228);
+    transform: scale(0,0);
+    transition: .5s;
+}
+#navbar .nav-items ul li a:hover{
+    color: rgb(5, 228, 228);
+}
+#a:hover#a::before{
+    transform: scale(1,1);
+}
+#navbar .nav-items ul li button{
+    cursor: pointer;
+    outline: none;
+    background: #0e1111;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+}
+#navbar .nav-items ul li button:hover{
+    box-shadow: 0px 2px 8px #0e1111;
+    letter-spacing: 1px;
+}
+/* ..............................home...................... */
+#first-home .container img{
+    width: 150px;
+    border-radius: 50%;
+}
+#first-home{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    background: url(../images/pu\ copy.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+#first-home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(white, transparent);
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+#first-home h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'segoe UI Black';
+    cursor: pointer;
+}
+#first-home #h1{
+    position: relative;
+}
+#first-home #h1::before{
+    content: attr(REFL-TEXT);
+    position: absolute;
+    top: 0;
+    transform: translateX(-32px)skewX(-45deg)rotateX(180deg);
+    line-height: 2.5;
+    background: linear-gradient(white,white,grey,#0e1111);
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: .4s;
+    z-index: -1;
+}
+#first-home #h1:hover#h1::before{
+    opacity: .4;
+    line-height: 3;
+}
+
+#first-home #h11{
+    color: transparent;
+    -webkit-text-stroke: 2px #0e1111;
+    position: relative;
+}
+#first-home #h11:hover{
+    color: #0e1111;
+}
+#first-home #h11::before{
+    content: attr(REFL-TEXT);
+    position: absolute;
+    top: 0;
+    transform: translateX(-32px)skewX(-45deg)rotateX(180deg);
+    line-height: 2.5;
+    background: white;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: .4s;
+    z-index: -1;
+}
+#first-home #h11:hover#h11::before{
+    opacity: .3;
+    line-height: 3;
+}
+
+#first-home .home-buttons button{
+    padding: 10px 30px;
+    margin: 20px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#first-home .home-buttons button:hover{
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 8px black;
+}
+#first-home .home-buttons #web-design-btn{
+    background: #0e1111;
+    color: white;
+    border: 2px solid #0e1111;
+}
+#first-home .home-buttons #graphic-design-btn{
+    background: white;
+    color: #0e1111;
+    border: 2px solid #0e1111;
+}
+/* ///////////////////////////////////////Web design page//////////////////////////////////////////////////////////////////////// */
+#click-me{
+    position: fixed;
+    top: 40%;
+    z-index: 222;
+}
+#click-me button{
+    background: transparent;
+    color: teal;
+    border: 1px solid teal;
+    padding: 10px;
+    outline: none;
+    margin-left: -55px;
+    border-radius: 0 20px 20px 0;
+    animation: clck 3s linear infinite;
+}
+@keyframes clck{
+    0%{
+        box-shadow: 2px 4px 8px teal,
+                    2px 4px 8px teal,
+                    2px 4px 8px teal;
+    }
+    50%{
+        box-shadow: 0px 04px 8px teal;
+    }
+    100%{
+        box-shadow: 2px 0px 8px teal;
+    }
+    
+}
+#click-me button:hover{
+    margin-left: -2px;
+    cursor: pointer;
+    background: teal;
+    color: white;
+}
+
+#looking-jobs ::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+}
+#looking-jobs ::-webkit-scrollbar-thumb{
+    background: linear-gradient(black, teal, black);
+}
+#looking-jobs{
+    height: 100%;
+    width: 100%;
+    background: #161717fc;
+    position: fixed;
+    z-index: 999;
+    transform: scale(0,0);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#looking-jobs #container{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+#closelooking{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#looking-jobs .cont{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+}
+#looking-jobs .cont #areyouahiring{
+    width: 100%;
+}
+#looking-jobs .cont .card{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+#looking-jobs .cont .card-header{
+    background: transparent;
+    border: none;
+}
+#looking-jobs .cont .card-header img{
+    width: 100px;
+    float: right;
+    margin-bottom: -30px;
+    position: relative;
+}
+#looking-jobs .cont .card-content{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    user-select: none;
+}
+#looking-jobs .cont .card-content h6{
+    color: teal;
+}
+#looking-jobs .cont .card-content button{
+    padding: 5px 10px;
+    background: black;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+#looking-jobs .cont .card-content button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+
+
+
+
+/* ///////////////////////////////////web home///////////////////////////////////// */
+#web-home{
+    background: url(../images/bb.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    color: white;
+    width: 100%;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+#web-home::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, teal,rgba(0, 128, 128, 0.858), transparent);
+    position: absolute;
+    z-index: -1;
+}
+#web-home h1{
+    font-weight: bold;
+}
+#web-home #divider{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+}
+#web-home button{
+    padding: 10px 50px;
+    outline: none;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#web-home button:hover{
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 8px black;
+}
+/* about me */
+
+#about-me{
+    background: url(../images/vec.png);
+    background-repeat: no-repeat;
+}
+#about-me .row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#about-me #myimg{
+    position: relative;
+    transition: 1s;
+}
+#about-me #myimg-copy{
+    position: absolute;
+    left: 20px;
+    bottom: 5px;
+    opacity: 0;
+    transition: 1s;
+}
+#abt-me{
+    cursor: pointer;
+}
+#abt-me:hover #myimg-copy{
+    opacity: 1;
+}
+#abt-me:hover #myimg{
+    opacity: 0;
+}
+#about-me .row button{
+    cursor: pointer;
+    outline: none;
+    background: #0e1111;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+}
+#about-me .row button:hover{
+    box-shadow: 0px 2px 8px #0e1111;
+    letter-spacing: 1px;
+}
+/* latest-projects */
+#latest-projects h1{
+    text-shadow: 0px 2px 4px black;
+}
+#latest-projects{
+    color: rgba(255, 255, 255, 0.894);
+    background: linear-gradient(#161717,#161717,black);
+}
+#latest-projects .card{
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px black;
+    overflow: hidden;
+    border: 1px solid rgba(84, 82, 82, 0.633);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#latest-projects .card:hover{
+    box-shadow: 0px 0px 8px black;
+    border: 1px solid rgba(1, 94, 94, 0.643);
+}
+#latest-projects .card:hover.card img{
+    transform: scale(1.1,1.1);
+}
+#latest-projects .card .card-content{
+    color: white;
+    padding: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+}
+#latest-projects #rank-fuse .card-content{
+    color: black;
+}
+
+#explore-more{
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    background: url(../images/HD-wallpaper-apple-macbook.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+#explore-more::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(black, transparent);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#explore-more button{
+    padding: 10px 60px;
+    outline: none;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#explore-more button:hover{
+    box-shadow: 0px 0px 4px white,
+                0px 0px 8px teal,
+                0px 0px 16px white;
+    text-shadow: 0px 0px 4px black;
+    letter-spacing: 1px;
+    background: #ffffff4c;
+}
+#more-text{
+    display: none;
+}
+#read-more:checked ~ #more-text{
+    display: block;
+}
+.see-more,.see-less{
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(0, 176, 176);
+}
+.see-more:hover,.see-less:hover{
+    letter-spacing: 1px;
+}
+.see-more{
+    display: block;
+}
+.see-less{
+    display: none;
+}
+#read-more:checked ~ .see-less{
+    display: block;
+}
+#read-more:checked ~ .see-more{
+    display: none;
+}
+
+/* hiring managers */
+
+#hiring-managers{
+    height: 100%;
+    width: 100%;
+    background: white;
+}
+#hiring-managers .row{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+#small-bsn img{
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px #00000043;
+}
+#hiring-managers #rec-btn{
+    background: teal;
+    padding: 10px 30px;
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+#hiring-managers #rec-btn:hover{
+    letter-spacing: 1px;
+    box-shadow: 2px 0px 8px black;
+    background: rgb(2, 159, 159);
+}
+#hiring-managers #smal-btn{
+    color: teal;
+    padding: 10px 30px;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+    border: 2px solid teal;
+    cursor: pointer;
+}
+#hiring-managers #smal-btn:hover{
+    letter-spacing: 1px;
+    box-shadow: 2px 0px 8px black;
+    background: rgba(0, 128, 128, 0.091);
+}
+#hiring-managers h2{
+    color: rgba(2, 56, 56, 0.95);
+}
+
+
+#what-i-do p{
+    padding: 5px 20px;
+    border-left: 2px solid rgba(2, 56, 56, 0.95);
+    border-right: 2px solid rgba(2, 56, 56, 0.95);
+}
+#childd1{
+    display: block;
+}
+#childd2,#childd3,#childd4{
+    display: none;
+}
+#what-i-do #par1:checked ~ #childd1{
+    display: none;
+}
+#what-i-do #par1:checked ~ h4{
+    background-color: red;
+}
+#what-i-do #par2:checked ~ #childd2{
+    display: block;
+}
+#what-i-do #par3:checked ~ #childd3{
+    display: block;
+}
+#what-i-do #par4:checked ~ #childd4{
+    display: block;
+}
+#par-head{
+    background: rgba(2, 56, 56, 0.95);
+    color: #ffffffdc;
+    width: 100%;
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    user-select: none;
+    position: relative;
+}
+#par-head:hover{
+    background: teal;
+}
+#par-head img{
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+}
+#non-smile,.activee #smile{
+    display: block;
+}
+#smile{
+    display: none;
+}
+#par-head:hover #non-smile{
+    display: none;
+}
+#par-head:hover #smile{
+    display: block;
+}
+
+
+/* ..................................footer..................................... */
+#footer{
+    height: 100%;
+    width:100%;
+    background: url(../images/footer-image-design.jpg);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+#footer::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(transparent,rgba(0, 64, 64, 0.409),rgba(0, 128, 128, 0.409));
+    position: absolute;
+    z-index: -1;
+}
+#footer-divider{
+    position: absolute;
+    top: 0;
+    letter-spacing: 0;
+    width: 100%;
+    height: 80px;
+}
+#footer #footer-logo{
+    width: 100px;
+}
+#footer p{
+    text-align: left;
+    padding-right: 20px;
+}
+#footer h4{
+    color: rgb(5, 228, 228);
+}
+#quick-links{
+    text-align: center;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+#quick-links li{
+    cursor: pointer;
+}
+#quick-links a{
+    color: white;
+}
+#quick-links a:hover{
+    color: rgb(5, 248, 248);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+#footer #contact{
+    text-align: left;
+    padding-left: 50px;
+}
+#footer #contact a{
+    color: white;
+    text-decoration: none;
+}
+#footer #contact a:hover{
+    color: rgb(5, 248, 248);
+    letter-spacing: 1px;
+}
+#footer #contact button{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    background: rgb(5, 248, 248);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+#footer #contact button:hover{
+    color: white;
+    background: teal;
+    cursor: pointer;
+}
+#footer #line{
+    height: 1px;
+    width: 100%;
+    background: #ffffff34;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////// */
+#project-home{
+    background: url(../images/comp.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    color: rgb(228, 222, 222);
+    width: 100%;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+}
+#project-home::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, black,rgba(0, 0, 0, 0.822), transparent);
+    position: absolute;
+    z-index: -1;
+}
+#project-home h1{
+    font-weight: bold;
+}
+#project-home #divider{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 150px;
+    width: 100%;
+}
+#project-home button{
+    padding: 10px 50px;
+    outline: none;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+#project-home button:hover{
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 8px black;
+}
+#ipadd{
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+#myprojects .row{
+    display: flex;
+    align-items: center;
+}
+#myprojects .paren{
+    position: absolute;
+    height: 410px;
+    width: 63%;
+    overflow-X: hidden;
+    overflow-y: scroll;
+    top: 100px;
+    left: 18.5%;
+}
+#myprojects .paren::-webkit-scrollbar{
+    width: 5px;
+}
+#myprojects .paren::-webkit-scrollbar-thumb{
+    background: black;
+}
+#myprojects .paren .chil{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+#myprojects .paren .chil img{
+    height: 100%;
+    width: 100%;
+}
+#proj-title{
+    color: teal;
+}
+#proj-descript{
+    padding: 20px 0;
+}
+#proj-button{
+    width: 100%;
+    cursor: pointer;
+    padding:15px;
+    color: white;
+    background: teal;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+#proj-button:hover{
+    color: teal;
+    background: white;
+    border: 2px solid teal;
+}
+#all-projects::-webkit-scrollbar{
+    height: 10px;
+}
+#all-projects::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg, white,teal, white);
+}
+#all-projects{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+}
+#all-projects .card{
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 0 4px black;
+    color: teal;
+    font-weight: bold;
+    position: relative;
+}
+#all-projects .card:hover{
+    transform: scale(1.2,1.2);
+    cursor: pointer;
+    color: white;
+    background: teal;
+}
+#all-projects .card img{
+    width:100%;
+    border-radius: 0 0 0% 50%;
+}
+#all-projects .card:hover img{
+    width:100%;
+    border-radius: 0 0 50% 50%;
+}

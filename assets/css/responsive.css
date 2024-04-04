@@ -1,0 +1,162 @@
+@media only screen and (max-width: 1080px){
+    #first-home h1{
+        font-size: 60px;
+    }
+    #ipadd{
+        position: relative;
+        height: 500px;
+        width: 100%;
+    }
+    #myprojects .paren{
+        position: absolute;
+        height: 345px;
+        width: 63%;
+        overflow-X: hidden;
+        overflow-y: scroll;
+        top: 80px;
+        left: 18.5%;
+    }
+}
+@media only screen and (max-width: 999px){
+    #navbar{
+        height: 65px;
+    }
+    .nav-items label{
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+        position: relative;
+        float: right;
+        right: 20px;
+        top: -50px;
+    }
+    #navbar .nav-items #nav-links{
+        display: block;
+        text-align: right;
+        transform: scaleX(0)translateY(100px);
+        position: absolute;
+        width: 100%;
+        padding: 10%;
+        left: 0;
+        overflow: hidden;
+        transition: .4s;
+        transform-origin: right;
+        background: rgba(0, 128, 128, 0.762);
+        padding-bottom: 50px;
+    } 
+    #nav-btn:checked~#nav-links{
+        transform: scaleX(1)translateY(48px);
+    }
+    #navbar .nav-items ul li{
+        margin-bottom: 10px;
+    }
+  
+}
+@media only screen and (max-width: 900px){
+    #first-home h1{
+        font-size: 50px;
+    }
+    #first-home .home-buttons button{
+        padding: 5px 20px;
+        margin: 10px;
+        outline: none;
+        cursor: pointer;
+    }
+    #first-home .home-buttons button:hover{
+        padding: 5px 25px;
+        box-shadow: 0px 2px 8px black;
+    }
+}
+
+@media only screen and (max-width: 777px){
+    #navbar .nav-logo img{
+        width: 50px;
+    }
+    #navbar .nav-items ul li button{
+        padding: 5px 20px;
+    }
+    .nav-items label{
+        font-size: 35px;
+        top: -45px;
+    }
+    #first-home h1{
+        font-size: 40px;
+    }
+    #first-home .based{
+        font-size: 15px;
+    }
+
+    #looking-jobs .cont{
+        width: 80%;
+    }
+    #footer #contact{
+        text-align: center;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    .nav-items label{
+        font-size: 30px;
+    }
+    #first-home h1{
+        font-size: 30px;
+    }
+    #first-home #h11{
+        -webkit-text-stroke: 1px #0e1111;
+    }
+    #first-home .based{
+        font-size: 10px;
+    }
+    #web-home #divider{
+        height: 100px;
+    }
+    #looking-jobs .cont{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 400px){
+    #myprojects .paren{
+        position: absolute;
+        height: 345px;
+        width: 60%;
+        overflow-X: hidden;
+        overflow-y: scroll;
+        top: 80px;
+        left: 20%;
+    }
+}
+@media only screen and (max-width: 377px){
+    #navbar{
+        height: 50px;
+    }
+    #navbar .nav-logo img{
+        width: 40px;
+    }
+    .nav-items label{
+        top: -40px;
+    }
+    #nav-btn:checked~#nav-links{
+        transform: scaleX(1)translateY(45px);
+    }
+    #first-home h1{
+        font-size: 20px;
+    }
+    #web-home #divider{
+        height: 70px;
+        bottom: -10px;
+    }
+    #looking-jobs .cont #areyouahiring{
+        width: 100%;
+    }
+    #web-home{
+        background-attachment: scroll;
+        background-position: center;
+    }
+    #explore-more{
+        background-attachment: scroll;
+        background-position: center;
+    }
+
+
+}
