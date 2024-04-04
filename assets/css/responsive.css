@@ -13,7 +13,7 @@
         width: 63%;
         overflow-X: hidden;
         overflow-y: scroll;
-        top: 80px;
+        top: 105px;
         left: 18.5%;
     }
     #scroll-left{
@@ -127,6 +127,15 @@
         overflow-y: scroll;
         top: 80px;
         left: 20%;
+    }
+    #myprojects .paren{
+        position: absolute;
+        height: 345px;
+        width: 62%;
+        overflow-X: hidden;
+        overflow-y: scroll;
+        top: 108px;
+        left: 19%;
     }
 }
 @media only screen and (max-width: 377px){
