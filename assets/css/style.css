@@ -757,7 +757,7 @@ h1,h2{
     width: 63%;
     overflow-X: hidden;
     overflow-y: scroll;
-    top: 100px;
+    top: 125px;
     left: 18.5%;
 }
 #myprojects .paren::-webkit-scrollbar{
@@ -835,8 +835,7 @@ h1,h2{
     width:100%;
     border-radius: 0 0 50% 50%;
 }
+
 #scroll-left{
     display: none;
 }
-
-
