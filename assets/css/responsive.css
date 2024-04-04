@@ -169,6 +169,9 @@
         background-attachment: scroll;
         background-position: center;
     }
-
+    #project-home{
+        background-attachment: scroll;
+        background-position: left;
+    }
 
 }
