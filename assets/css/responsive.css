@@ -16,6 +16,9 @@
         top: 80px;
         left: 18.5%;
     }
+    #scroll-left{
+        display: block;
+    }
 }
 @media only screen and (max-width: 999px){
     #navbar{
