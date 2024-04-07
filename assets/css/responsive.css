@@ -19,6 +19,9 @@
     #scroll-left{
         display: block;
     }
+    #web-home{
+        background: url(../images/web-design-backgr.jpg);
+    }
 }
 @media only screen and (max-width: 999px){
     #navbar{
