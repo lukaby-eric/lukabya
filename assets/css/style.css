@@ -299,10 +299,6 @@ h1,h2{
     color: teal;
 }
 
-
-
-
-
 /* ///////////////////////////////////web home///////////////////////////////////// */
 #web-home{
     background: url(../images/web-design-background.jpg);
@@ -403,7 +399,31 @@ h1,h2{
     color: rgba(255, 255, 255, 0.894);
     background: linear-gradient(#161717,#161717,black);
 }
-#latest-projects .card{
+#apiprojects{
+    padding-bottom: 40px;
+}
+#apiprojects .card-content{
+    background: #000000a8;
+    margin-bottom: -30px;
+}
+#apiprojects .card{
+    background:transparent;
+    border: none;
+    box-shadow: none;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+#apiprojects .card:hover .card-content{
+    background: #000;
+}
+#apiprojects .card img{
+    height: 100%;
+    width: 100%;
+}
+#latest-projects #landing .card{
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 2px 6px black;
