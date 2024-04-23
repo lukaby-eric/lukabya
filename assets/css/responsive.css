@@ -22,6 +22,9 @@
     #web-home{
         background: url(../images/web-design-backgr.jpg);
     }
+    #apiprojects .card{
+        height: 500px;
+    }
 }
 @media only screen and (max-width: 999px){
     #navbar{
@@ -55,6 +58,9 @@
     }
     #navbar .nav-items ul li{
         margin-bottom: 10px;
+    }
+    #apiprojects .card{
+        height: 450px;
     }
   
 }
@@ -100,6 +106,9 @@
         padding-left: 0;
         margin: 0 auto;
     }
+    #apiprojects .card{
+        height: 500px;
+    }
 }
 @media only screen and (max-width: 500px){
     .nav-items label{
@@ -139,6 +148,9 @@
         overflow-y: scroll;
         top: 108px;
         left: 19%;
+    }
+    #apiprojects .card{
+        height: 400px;
     }
 }
 @media only screen and (max-width: 377px){
