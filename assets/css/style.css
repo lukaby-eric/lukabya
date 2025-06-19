@@ -301,7 +301,7 @@ h1,h2{
 
 /* ///////////////////////////////////web home///////////////////////////////////// */
 #web-home{
-    background: url(../images/web-design-background.jpg);
+    background: url(../images/Della\ Basketball\ Mockup.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -311,6 +311,81 @@ h1,h2{
     padding: 150px 0;
     position: relative;
     z-index: 1;
+    animation: hom 30s linear infinite;
+}
+@keyframes hom {
+    0%{
+        background: url(../images/Della\ Basketball\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    10%{
+        background: url(../images/Della\ Basketball\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    20%{
+        background: url(../images/Della\ Basketball\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    30%{
+        background: url(../images/Della\ Basketball\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    40%{
+        background: url(../images/Salvation\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    50%{
+        background: url(../images/Salvation\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    60%{
+        background: url(../images/Salvation\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    70%{
+        background: url(../images/Salvation\ Mockup.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+    }
+    80%{
+        background: url(../images/web-design-background.jpg); 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-size: cover;
+    }
+    90%{
+        background: url(../images/web-design-background.jpg); 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+    }
+    95%{
+        background: url(../images/web-design-background.jpg); 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+    }
+    100%{
+        background: url(../images/Della\ Basketball\ Mockup.png); 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        background-attachment: fixed;
+    }
 }
 #web-home::after{
     content: "";
@@ -318,7 +393,7 @@ h1,h2{
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, teal,rgba(0, 128, 128, 0.858), transparent);
+    background: linear-gradient(90deg, teal,rgba(0, 128, 128, 0.918), transparent);
     position: absolute;
     z-index: -1;
 }
@@ -391,6 +466,65 @@ h1,h2{
     box-shadow: 0px 2px 8px #0e1111;
     letter-spacing: 1px;
 }
+
+/* skills */
+
+#skills{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background: url(../images/HD-wallpaper-apple-macbook.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px 0;
+    z-index: 1;
+}
+#skills::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(white, white,transparent);
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+#skills .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: scroll;
+}
+#skills .row::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  #skills .row::-webkit-scrollbar-track {
+    background: transparent;
+    height: 0;
+    width: 0;
+  }
+  #skills .row::-webkit-scrollbar-thumb {
+    background: #888;
+    height: 0;
+    width: 0;
+  }
+#skills .row .img{
+    width: 100%;
+    border-radius: 20px;
+}
+#skills .row .card{
+    height: 140px;
+    width: 110px;
+}
+#skills .row .card:hover{
+    height: 140px;
+    width: 110px;
+    cursor: pointer;
+    z-index: 2;
+}
 /* latest-projects */
 #latest-projects h1{
     text-shadow: 0px 2px 4px black;
@@ -399,12 +533,19 @@ h1,h2{
     color: rgba(255, 255, 255, 0.894);
     background: linear-gradient(#161717,#161717,black);
 }
+/* ////////////////////////////////////API projects ///////////////////////////////////////////////////*/
+#apititle{
+    background: rgb(33, 32, 32);
+    text-align: center;
+    color: white;
+}
 #apiprojects{
-    padding-bottom: 40px;
+    background: grey;
+    height: 100%;
 }
 #apiprojects .card-content{
     background: #000000a8;
-    margin-bottom: -30px;
+    margin-bottom: -35px;
 }
 #apiprojects .card{
     background:transparent;
@@ -413,17 +554,19 @@ h1,h2{
     height: 600px;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    margin-bottom: 20px;
 }
 #apiprojects .card:hover .card-content{
     background: #000;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 #apiprojects .card img{
-    height: 100%;
-    width: 100%;
+    height: 400px;
+    width: 350px;
+    margin: 0 auto;
 }
-#latest-projects #landing .card{
+#landing .card{
     position: relative;
     border-radius: 10px;
     box-shadow: 0px 2px 6px black;
@@ -432,14 +575,14 @@ h1,h2{
     cursor: pointer;
     margin-bottom: 20px;
 }
-#latest-projects .card:hover{
+.card:hover{
     box-shadow: 0px 0px 8px black;
     border: 1px solid rgba(1, 94, 94, 0.643);
 }
-#latest-projects .card:hover.card img{
+.card:hover.card img{
     transform: scale(1.1,1.1);
 }
-#latest-projects .card .card-content{
+.card .card-content{
     color: white;
     padding: 30px;
     position: absolute;
@@ -447,7 +590,7 @@ h1,h2{
     bottom: 30px;
     left: 0;
 }
-#latest-projects #rank-fuse .card-content{
+#rank-fuse .card-content{
     color: black;
 }
 
@@ -711,8 +854,30 @@ h1,h2{
     margin-bottom: 20px;
 }
 
+#open-to-work {
+    position: relative;
+    z-index: 1;
+}
+#open-to-work::before{
+    content: "Open to work";
+    position: absolute;
+    color: rgb(5, 248, 248);
+    z-index: -1;
+    font-weight: bold;
+    animation: op 2s linear infinite;
+    bottom: -20px;
+    transform: rotateX(180deg);
+  
 
-
+}
+@keyframes op {
+    0%{
+        color: teal;
+    }
+    100%{
+        color: transparent;
+    }
+}
 
 /* ////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////// */
